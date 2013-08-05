@@ -1,0 +1,26 @@
+header{
+
+}
+.logo{
+	display: block;
+	width: 450px;
+	margin: 0 auto;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	padding: 32px 0;
+	background: url("images/logo-dressing-room.jpg") no-repeat center left;
+}
+.menu{
+	margin: 24px 24px;
+}
+.menu .menu-item{
+	margin-right: 24px;
+}
+.menu .menu-item.selected{
+	font-weight: bold;
+}
+.main-content{
+	margin: 0 24px 24px;
+}
