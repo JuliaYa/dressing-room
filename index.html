@@ -1,44 +1,21 @@
 <html>
 <head>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
 </head>
 <body>
-<script>
-	(function(){
-		Parse.initialize("lupEk7oba7f7QXvPtF3bfkVIyvoq3NhIxlqH2939", "lL1EY725h8D6h1x0Z0cFZsS1Dbsfevd7Le9rWVIq");
-		init();
-	})();
-	function init(){
-		var TestObject = Parse.Object.extend("TestObject");
-		var query = new Parse.Query(TestObject);
-		query.equalTo("foo");
-		query.find({
-		  success: function(results) {
-		    document.getElementById("first").innerHTML ="Successfully retrieved " + results.length + " scores.";
-		    // Do something with the returned Parse.Object values
-		    var second = document.getElementById("second");
-		    var str = "";
-		    for (var i = 0; i < results.length; i++) { 
-		      var object = results[i];
-		      str += object.id + ' - ' + object.get('foo') +"\n";
-		    }
-		    second.innerHTML = str;
-		  },
-		  error: function(error) {
-		    alert("Error: " + error.code + " " + error.message);
-		  }
-		});
-		// var testObject = new TestObject();
-		// testObject.save({foo: "bar"}, {
-		//   success: function(object) {
-		//     alert("yay! it worked");
-		//   }
-		// });
-	}
-</script>
-	<h1>Test</h1>
-	<p id="first"></p>
-	<p id="second"></p>
+	<header><a class="logo" href="index.html">My Dressing Room</a></header>
+	<article class="menu">
+		<a class="menu-item selected" href="index.html">Designer</a>
+		<a class="menu-item" href="">Saved Sets</a>
+		<a class="menu-item" href="">Add New Item</a>
+	</article>
+	<article class="main-container">
+		
+	</article>
 
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ header{
 	font-weight: bold;
 	text-align: center;
 	padding: 32px 0;
-	background: url("images/logo-dressing-room.jpg") no-repeat center left;
+	background: url("../images/logo-dressing-room.jpg") no-repeat center left;
 }
 .menu{
 	margin: 24px 24px;
