@@ -1,8 +1,21 @@
-<html>
+<html ng-app>
 <head>
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+	<meta charset="UTF-8">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+
+	<!--<script src="js/bootstrap.min.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+
+	<script type="text/javascript" src="js/test-data.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--<script type="text/javascript" src="js/pseudoheads.js"></script>
+	<script type="text/javascript" src="js/head.js"></script>-->
+
 </head>
 <body>
 	<header><a class="logo" href="index.html">My Dressing Room</a></header>
@@ -12,13 +25,11 @@
 		<a class="menu-item" href="">Add New Item</a>
 	</article>
 	<article class="main-content">
-	<div class="big-area">
-		<img id="testImg" src="images/test-images/trinketry/trink_4.jpg" class="img-thumbnail">
-	</div>
-	</article>
 
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/test-data.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<div ng-controller="HeadsList">
+		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail" title="{{name}}">
+	</div>
+
+	</article>
 </body>
 </html>

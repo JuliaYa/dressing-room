@@ -1,3 +1,8 @@
+function HeadsList ($scope) {
+	$scope.heads = window.headsList;
+} 
+
+
 var Disigner = (function(){
 	
 	var init = function(){
@@ -12,5 +17,5 @@ var Disigner = (function(){
 })();
 
 (function(){
-	Disigner.init();
+	//Disigner.init();
 })();

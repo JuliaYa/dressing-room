@@ -1,3 +1,46 @@
+var headsList = [
+{
+    "name": "Wilkinson",
+    "description": "anim",
+    "tags": "",
+    "season": "off-season",
+    "type": "head",
+    "url": "images/test-images/head/head_1.jpg"
+},
+{
+    "name": "Ramirez",
+    "description": "sit",
+    "tags": "",
+    "season": "off-season",
+    "type": "head",
+    "url": "images/test-images/head/head_2.jpg"
+},
+{
+    "name": "Catherine",
+    "description": "adipisicing",
+    "tags": "",
+    "season": "off-season",
+    "type": "head",
+    "url": "images/test-images/head/head_3.jpg"
+},
+{
+    "name": "Daugherty",
+    "description": "magna",
+    "tags": "",
+    "season": "off-season",
+    "type": "head",
+    "url": "images/test-images/head/head_4.jpg"
+},
+{
+    "name": "Ross",
+    "description": "in",
+    "tags": "",
+    "season": "off-season",
+    "type": "head",
+    "url": "images/test-images/head/head_5.jpg"
+}
+];
+
 var listClothes = [
 {
     "name": "Wilkinson",
