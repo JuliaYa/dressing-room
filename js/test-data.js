@@ -41,6 +41,92 @@ var headsList = [
 }
 ];
 
+var bodiesList = [
+{
+    "name": "Nixon",
+    "description": "dolor",
+    "tags": "",
+    "season": "off-season",
+    "type": "body",
+    "url": "images/test-images/body/dress_1.jpg"
+},
+{
+    "name": "Key",
+    "description": "laborum",
+    "tags": "",
+    "season": "off-season",
+    "type": "body",
+    "url": "images/test-images/body/dress_2.jpg"
+},
+{
+    "name": "Decker",
+    "description": "eu",
+    "tags": "",
+    "season": "off-season",
+    "type": "body",
+    "url": "images/test-images/body/dress_3.jpg"
+},
+{
+    "name": "Hester",
+    "description": "elit",
+    "tags": "",
+    "season": "off-season",
+    "type": "body",
+    "url": "images/test-images/body/dress_4.jpg"
+},
+{
+    "name": "Christian",
+    "description": "nulla",
+    "tags": "",
+    "season": "off-season",
+    "type": "body",
+    "url": "images/test-images/body/dress_5.jpg"
+}
+];
+
+var footsList = [
+{
+    "name": "Envire",
+    "description": "non",
+    "tags": "",
+    "season": "off-season",
+    "type": "foots",
+    "url": "images/test-images/foots/foots_1.jpg"
+},
+{
+    "name": "Norali",
+    "description": "consequat",
+    "tags": "",
+    "season": "off-season",
+    "type": "foots",
+    "url": "images/test-images/foots/foots_2.jpg"
+},
+{
+    "name": "Zytrax",
+    "description": "aliqua",
+    "tags": "",
+    "season": "off-season",
+    "type": "foots",
+    "url": "images/test-images/foots/foots_3.jpg"
+},
+{
+    "name": "Noralex",
+    "description": "in",
+    "tags": "",
+    "season": "off-season",
+    "type": "foots",
+    "url": "images/test-images/foots/foots_4.jpg"
+},
+{
+    "name": "Naxdis",
+    "description": "ex",
+    "tags": "",
+    "season": "off-season",
+    "type": "foots",
+    "url": "images/test-images/foots/foots_5.jpg"
+}
+];
+
 var listClothes = [
 {
     "name": "Wilkinson",

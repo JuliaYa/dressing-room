@@ -26,9 +26,19 @@
 	</article>
 	<article class="main-content">
 
-	<div ng-controller="HeadsList">
-		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail" title="{{name}}">
+	<div class="head block" ng-controller="HeadsList">
+		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail {{head.selected}}" title="{{head.name}}">
 	</div>
+	<div class="body block" ng-controller="BodyesList">
+		<img ng-repeat="body in bodyes" src="{{body.url}}" class="img-thumbnail {{body.selected}}" title="{{body.name}}">
+	</div>
+	<div class="foots block" ng-controller="FootsList">
+		<img ng-repeat="foot in foots" src="{{foot.url}}" class="img-thumbnail {{foot.selected}}" title="{{foots.name}}">
+	</div>
+
+	<!--<div class="bag block" ng-controller="HeadsList">
+		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail" title="{{name}}">
+	</div>-->
 
 	</article>
 </body>
