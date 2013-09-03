@@ -1,20 +1,16 @@
-<html ng-app>
+<html ng-app="designer">
 <head>
 	<meta charset="UTF-8">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
 
-	<!--<script src="js/bootstrap.min.js"></script>-->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.5.0.js"></script>
 	<script type="text/javascript" src="js/test-data.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<!--<script type="text/javascript" src="js/pseudoheads.js"></script>
-	<script type="text/javascript" src="js/head.js"></script>-->
 
 </head>
 <body>
@@ -24,21 +20,32 @@
 		<a class="menu-item" href="">Saved Sets</a>
 		<a class="menu-item" href="">Add New Item</a>
 	</article>
+
 	<article class="main-content">
 
-	<div class="head block" ng-controller="HeadsList">
-		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail {{head.selected}}" title="{{head.name}}">
-	</div>
-	<div class="body block" ng-controller="BodyesList">
-		<img ng-repeat="body in bodyes" src="{{body.url}}" class="img-thumbnail {{body.selected}}" title="{{body.name}}">
-	</div>
-	<div class="foots block" ng-controller="FootsList">
-		<img ng-repeat="foot in foots" src="{{foot.url}}" class="img-thumbnail {{foot.selected}}" title="{{foots.name}}">
-	</div>
+    <div class="block" ng-controller="HeadsList">
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.url}}" style="margin:auto;">
+        </slide>
+      </carousel>
+     </div>
 
-	<!--<div class="bag block" ng-controller="HeadsList">
-		<img ng-repeat="head in heads" src="{{head.url}}" class="img-thumbnail" title="{{name}}">
-	</div>-->
+    <div class="body block" ng-controller="BodyesList">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.url}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
+    <div class="block" ng-controller="FootsList">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.url}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
+
 
 	</article>
 </body>

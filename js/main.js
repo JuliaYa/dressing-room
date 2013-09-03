@@ -1,16 +1,14 @@
+angular.module('designer', ['ui.bootstrap']);
 function HeadsList ($scope) {
-	$scope.heads = window.headsList;
-	$scope.heads[0].selected = "selected";
+    $scope.slides = window.headsList;
  };
 
 function BodyesList ($scope) {
-	$scope.bodyes = window.bodiesList;
-	$scope.bodyes[0].selected = "selected";
+	$scope.slides = window.bodiesList;
 };
  
 function FootsList ($scope) {
-	$scope.foots = window.footsList;
-	$scope.foots[0].selected = "selected";
+	$scope.slides = window.footsList;
 }
 
 

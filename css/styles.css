@@ -30,7 +30,17 @@ header{
 
 /*----block----*/
 .block{
+    margin: 0 auto;
 	margin-bottom: 24px;
+    width: 500px;
+}
+.block .carousel-indicators{
+    display: none;
+}
+.block .carousel-caption {
+    background: none;
+    color: #333;
+    font-size: 14px;
 }
 
 .block img{
