@@ -1,4 +1,4 @@
-<html ng-app="designer">
+<html ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 
@@ -11,42 +11,26 @@
 	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.5.0.js"></script>
 	<script type="text/javascript" src="js/test-data.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript">
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    //the only jQuery line.  All else is the File API.
+                    document.getElementById("preview").src = e.target.result;
+                    //$('#preview').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </head>
 <body>
 	<header><a class="logo" href="index.html">My Dressing Room</a></header>
-	<article class="menu">
-		<a class="menu-item selected" href="index.html">Designer</a>
-		<a class="menu-item" href="">Saved Sets</a>
-		<a class="menu-item" href="">Add New Item</a>
-	</article>
 
-	<article class="main-content">
 
-    <div class="block" ng-controller="HeadsList">
-      <carousel interval="myInterval">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img ng-src="{{slide.url}}" style="margin:auto;">
-        </slide>
-      </carousel>
-     </div>
+    <div ng-view>
 
-    <div class="body block" ng-controller="BodyesList">
-        <carousel interval="myInterval">
-            <slide ng-repeat="slide in slides" active="slide.active">
-                <img ng-src="{{slide.url}}" style="margin:auto;">
-            </slide>
-        </carousel>
     </div>
-    <div class="block" ng-controller="FootsList">
-        <carousel interval="myInterval">
-            <slide ng-repeat="slide in slides" active="slide.active">
-                <img ng-src="{{slide.url}}" style="margin:auto;">
-            </slide>
-        </carousel>
-    </div>
-
-
-	</article>
 </body>
 </html>

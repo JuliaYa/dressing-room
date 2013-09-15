@@ -1,0 +1,31 @@
+<article id="designer" class="main-content" ng-controller="Designer">
+
+    <article class="menu">
+        <a class="menu-item selected" href="#/" >Designer</a>
+        <a class="menu-item" href="#/archive">Saved Sets</a>
+        <a class="menu-item" href="#/new">Add New Item</a>
+    </article>
+
+    <div class="block">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in heads" active="slide.active">
+                <img ng-src="{{slide.url}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
+
+    <div class="body block">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in bodies" active="slide.active">
+                <img ng-src="{{slide.url}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
+    <div class="block">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in foots" active="slide.active">
+                <img ng-src="{{slide.url}}" style="margin:auto;">
+            </slide>
+        </carousel>
+    </div>
+</article>

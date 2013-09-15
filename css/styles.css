@@ -27,7 +27,9 @@ header{
 	width: 900px;
 	margin: 0 auto;
 }
-
+.display-none{
+    display:none;
+}
 /*----block----*/
 .block{
     margin: 0 auto;

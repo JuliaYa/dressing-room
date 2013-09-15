@@ -1,30 +1,22 @@
-angular.module('designer', ['ui.bootstrap']);
-function HeadsList ($scope) {
-    $scope.slides = window.headsList;
- };
-
-function BodyesList ($scope) {
-	$scope.slides = window.bodiesList;
+angular.module('myApp', ['ui.bootstrap']).
+    config(function($routeProvider) {
+        $routeProvider.
+            when('/', {controller:Designer, templateUrl:'designer.html'}).
+            when('/archive', {controller:Archive, templateUrl:'archive.html'}).
+            when('/new', {controller:NewItem, templateUrl:'new.html'}).
+            otherwise({redirectTo:'/'});
+    });
+function Designer ($scope) {
+    $scope.heads = window.headsList;
+	$scope.bodies = window.bodiesList;
+	$scope.foots = window.footsList;
 };
- 
-function FootsList ($scope) {
-	$scope.slides = window.footsList;
-}
 
+function Archive($scope) {
 
-var Disigner = (function(){
-	
-	var init = function(){
-		if(listClothes){
-			var img = document.getElementById("testImg").src = listClothes[0].url;
-		}
-	};
+};
 
-	return {
-		init: init
-	}
-})();
+function NewItem($scope){
 
-(function(){
-	//Disigner.init();
-})();
+};
+
