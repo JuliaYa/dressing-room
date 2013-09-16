@@ -7,8 +7,43 @@
     </article>
 
     <article class="main-content">
-        <img id="preview" src="placeholder.png" height="100px" width="100px" />
-        <input type="file" name="image" onchange="previewImage(this)" accept="image/*"/>
+        <div class="thing-fields-container">
+            <div class="field-container">
+                <input type="file" name="image" onchange="previewImage(this)" accept="image/*"/>
+            </div>
+            <div class="field-container">
+                Name: <input id="name" type="text"/>
+            </div>
+            <div class="field-container">
+                Description: <textarea id="description"></textarea>
+            </div>
+            <div class="field-container">
+                Season:
+                <select id="season">
+                    <option value="summer">Summer</option>
+                    <option value="winter">Winter</option>
+                    <option value="inter-season">Inter season</option>
+                </select>
+            </div>
+            <div class="fields-container">
+                Type:
+                <select id="type">
+                    <option value="head">Head</option>
+                    <option value="top">Top</option>
+                    <option value="body">Body(dress)</option>
+                    <option value="legs">Legs(pants, skirt)</option>
+                    <option value="foot">Foot</option>
+                    <option value="bag">Bag</option>
+                </select>
+            </div>
+            <div class="fields-container">
+                <button id="addThingButton" class="btn btn-lg btn-primary">Add Item</button>
+            </div>
+        </div>
+        <div class="new-thing-container">
+            <img id="preview" class="thumbnail" src="images/placeholder.png"/>
+        </div>
+
      </article>
 
  </article>

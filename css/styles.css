@@ -57,3 +57,12 @@ header{
 	height: 200px;
 	width: auto;
 }
+
+/*---- new item page ----*/
+.new-thing-container,
+.thing-fields-container{
+    float: left;
+}
+.new-thing-container{
+    margin-left: 48px;
+}
